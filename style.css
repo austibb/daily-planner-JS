@@ -23,6 +23,8 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  top: auto;
+  padding-top: 10px;
 }
 
 .time-block {
@@ -32,7 +34,6 @@ textarea {
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
   border-top: 1px solid white;
 }
 
@@ -65,7 +66,27 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.saveBtn:hover {
+  cursor: pointer;
+}
+
+/* hover effect on the save icon to change color from black to white */
+.saveBtn img:hover {
+  filter:invert(0);
   transition: all 0.3s ease-in-out;
+}
+
+.icon {
+  filter:invert(1);
+}
+
+.icon, .time-block {
+  margin: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#saveStatus {
+  text-align: center;
 }
